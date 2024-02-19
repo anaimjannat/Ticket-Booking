@@ -1,13 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bus Ticket</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <!-- tailwind and daisy ui -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .raleway-font {
+      font-family: "Raleway", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+    }
+
+    .buttonBackgroundColor {
+      background-color: #1DD100;
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'bus-primary': '#1DD100',
+          }
+        }
+      }
+    }
+  </script>
+  <title>Bus Ticket</title>
 </head>
+
 <body>
-    <main>
-        
-    </main>
+  <header class="mx-32">
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <a class="text-xl text-[#030712] font-extrabold">P-Ticket</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 text-[#030712B3] font-medium">
+          <li><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Destination</a></li>
+          <li><a>Search</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn text-[#1DD100] bg-[#1DD1001A]">Bus <img src="images/bus-icon.png" alt=""></a>
+      </div>
+    </div>
+    <!-- Banner -->
+    <div class="relative bg-cover bg-center h-[550px] rounded-3xl mx-2"
+      style="background-image: url('/images/banner.png')">
+      <div class="absolute inset-0 flex flex-col justify-center items-center text-center gap-4">
+        <h2 class="text-white text-3xl md:text-6xl font-bold mb-2">End-to-End Travel with</h2>
+        <h2 class="text-[#1DD100] text-3xl md:text-6xl font-bold mb-2">AHR-Travels</h2>
+        <p class="text-white text-sm mx-5 md:text-base mt-5 px-3 lg:px-96">Yes, you can run unit tests and view
+          the results
+          directly
+          within the app. The integrated testing features allow for a streamlined.</p>
+
+        <button class="btn mt-2 lg:mt-4 bg-[#1DD100] border-none text-[#030712] lg:text-xl font-bold font-raleway"><a
+            href="#ahr-travel">Buy
+            Tickets</a></button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="max-w-full mt-[120px] mx-auto mb-[120px]">
+      <div class="w-[81.25%] mx-auto text-center flex flex-col items-center">
+          <h2 class="font-raleway text-xl lg:text-[40px] font-bold text-[#030712]">Best offers for you</h2>
+
+          <div class="my-12 flex flex-col lg:flex-row gap-6">
+
+              <div
+                  class="bg-[#FFBF0F] lg:w-[573px] py-12 lg:py-[52px] pr-[52px] pl-[51px] rounded-3xl relative flex justify-between items-center">
+                  <div class="text-left">
+                      <h3 class="lg:text-[40px] font-black text-[rgba(3,7,18,0.8)]">15% OFF</h3>
+                      <p class="lg:text-xl font-semibold text-[rgba(3,7,18,0.8)]">on your next purchase</p>
+                      <p class="lg:text-lg font-medium text-[rgba(3,7,18,0.5)]">use by January 2024</p>
+                  </div>
+                  <img src="images/cupon-devider.png" class="absolute top-0 right-[127px] lg:right-[207px]"
+                      alt="">
+                  <div class="font-raleway ">
+                      <h3 id="new15" class="lg:text-[32px] font-bold text-[rgb(3,7,18)]">NEW15</h3>
+                      <p class="lg:text-xl font-medium text-[rgba(3,7,18,0.4)]">Coupon Code</p>
+                  </div>
+              </div>
+
+              <div
+                  class="bg-[#F78C9C] lg:w-[573px] py-12 lg:py-[52px] pr-[38px] pl-[51px] rounded-3xl relative flex justify-between items-center">
+                  <div class="text-left">
+                      <h3 class="lg:text-[40px] font-black text-[rgba(3,7,18,0.8)]">20% OFF</h3>
+                      <p class="lg:text-xl font-semibold text-[rgba(3,7,18,0.8)]">on your next purchase</p>
+                      <p class="lg:text-lg font-medium text-[rgba(3,7,18,0.5)]">use by January 2024</p>
+                  </div>
+                  <img src="images/cupon-devider.png" class="absolute top-0 right-[127px] lg:right-[207px]"
+                      alt="">
+                  <div class="font-raleway ">
+                      <h3 id="couple20" class="lg:text-[32px] font-bold text-[rgb(3,7,18)]">Couple 20
+                      </h3>
+                      <p class="lg:text-xl font-medium text-[rgba(3,7,18,0.4)]">Coupon Code</p>
+                  </div>
+              </div>
+          </div>
+          <button
+              class="btn bg-transparent text-[rgb(29,209,0)] border-[rgba(29,209,0,0.4)] font-raleway lg:text-xl mt-[14px]">See
+              All Offers</button>
+      </div>
+  </section>
+  </main>
 </body>
+
 </html>
