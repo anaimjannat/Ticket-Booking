@@ -1,4 +1,4 @@
-const chairs = document.getElementById("chairs");
+const allSeats = document.getElementById("allSeats");
 const seatButton = document.getElementsByClassName("seatButton");
 const appendedSection = document.getElementById("appended-section");
 const apply = document.getElementById("apply");
@@ -59,7 +59,7 @@ for (const seat of seatButton) {
         apply.removeAttribute("disabled");
       }
     } else {
-      alert("Maximum number of seats has been occupied!");
+      alert("Maximum number of seats limit is crossed!");
     }
   });
 }
