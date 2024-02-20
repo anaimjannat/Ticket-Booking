@@ -97,12 +97,3 @@ function pressCheck() {
   isPress = true;
   check();
 }
-
-const visiblePopup = document.getElementById("success-message");
-function check() {
-  if (isSelected === true && isTyped === true && isPress === true) {
-    visiblePopup.classList.remove("hidden");
-    hidePress.classList.add("hidden");
-    hidePressFoot.classList.add("hidden");
-  }
-}
