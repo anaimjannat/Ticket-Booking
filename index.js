@@ -84,7 +84,7 @@ apply.addEventListener("click", function () {
     setInnerTextWithIdAndValue("grand-total", grandFinal);
     hide.classList.add("hidden");
   } else {
-    alert("Invalid coupon code!");
+    alert("Invalid coupon!");
   }
 });
 
@@ -96,4 +96,13 @@ function typeCheck() {
 function pressCheck() {
   isPress = true;
   check();
+}
+
+const visiblePopup = document.getElementById("success-message");
+function check() {
+  if (isSelected === true && isTyped === true && isPress === true) {
+    visiblePopup.classList.remove("hidden");
+    hidePress.classList.add("hidden");
+    hidePressFoot.classList.add("hidden");
+  }
 }
