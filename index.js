@@ -1,5 +1,5 @@
 const allSeats = document.getElementById("allSeats");
-const seatButton = document.getElementsByClassName("seatButton");
+const seatBtn = document.getElementsByClassName("seatBtn");
 const appendedSection = document.getElementById("appended-section");
 const apply = document.getElementById("apply");
 
@@ -9,10 +9,10 @@ let isSelected = false;
 let isTyped = false;
 let isPress = false;
 
-for (const seat of seatButton) {
+for (const seat of seatBtn) {
   seat.addEventListener("click", function () {
     if (seatCount < 4) {
-      seat.classList.add("buttonBackgroundColor");
+      seat.classList.add("btnColor");
       seat.classList.add("text-white");
       seat.classList.remove("bg-[#F7F8F8]");
       seat.setAttribute("disabled", "");
@@ -59,7 +59,7 @@ for (const seat of seatButton) {
         apply.removeAttribute("disabled");
       }
     } else {
-      alert("Maximum number of seats limit is crossed!");
+      alert("Maximum limit of seats has been crossed!");
     }
   });
 }
