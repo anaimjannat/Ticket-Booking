@@ -16,7 +16,3 @@ function getInnerTextFromId(elementId) {
     return elementValue;
   }
   
-  function setInnerTextWithIdAndValue(elementId, value) {
-    const element = document.getElementById(elementId);
-    element.innerText = value;
-  }
